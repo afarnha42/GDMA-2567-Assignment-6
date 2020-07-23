@@ -51,6 +51,13 @@
 /*--------------------------------------------------------------
 3.0 - GENERIC
 -------------------------------------------------------------- */
+html {
+	font-family: 'Jost', sans-serif;
+	text-align: center;
+	font-size: 17px;
+	line-height: 22px;
+	color: #373635;
+}
 
 /*--------------------------------------------------------------
 4.0 - ELEMENTS
@@ -58,7 +65,18 @@
 /* -- FORMS -- */
 
 /* -- LISTS -- */
+li {
+	list-style-type: none;
+	display: inline-block;
+}
 
+a {
+	text-decoration: none;
+}
+
+p {
+	margin: 2.5rem 1.25rem;
+}
 /*--------------------------------------------------------------
 5.0 - OBJECTS
 -------------------------------------------------------------- */
@@ -86,9 +104,39 @@
 
 
 /* -- HEADER -- */
+h1 {
+	position: relative;
+	top: 70px;
+}
 
+header > div {
+	margin-top: 5rem;
+}
 /* -- NAVIGATION -- */
+nav {
+	font-size: .65rem;
+}
 
+nav li {
+	margin-right: 1.75rem;
+}
+
+
+
+
+
+
+
+	
+#safety {
+	background: url("../img/surfer1.jpg") no-repeat center center scroll; 
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	-ms-background-size: cover;
+	background-size: cover;
+			
+		}
 
 /*--------------------------------------------------------------
 7.0 - UTILITIES
@@ -100,8 +148,27 @@
 
 /* -- COLOR -- */
 
-/* -- SIZE -- */
+.bg-orange {
+		background-color: #ffa643;
+	} 
+		
+.bg-purp {
+			background-color: #d0b4db;
+	}
 
+.bg-blk {
+	background-color: #373635;
+	color: #fff;
+	
+}
+
+nav a {
+	color: #373635;
+}
+nav a:hover {
+	color: #d0b4db;
+}
+/* -- SIZE -- */
 
 
 
