@@ -62,16 +62,46 @@ html {
 /*--------------------------------------------------------------
 4.0 - ELEMENTS
 -------------------------------------------------------------- */
+
+
 p {
-	margin: 2.5rem 1.25rem;
+	
+	padding: 0 25px;
 }
 
 /* -- FORMS -- */
 
+label {
+	display: block;
+	padding: .5rem;
+	color: #fff;
+}
+
+input, textarea, select {
+	background-color: transparent;
+	border: solid #fff;
+	color: #fff;
+}
+
+textarea {
+	padding: 1rem;
+}
+
+
+
 /* -- LISTS -- */
 li {
 	list-style-type: none;
+	display: block;
+	padding: 0;
+}
+
+nav li {
 	display: inline-block;
+}
+
+ol {
+	padding-left: 25px;
 }
 
 a {
@@ -108,20 +138,41 @@ a {
 /*--------------------------------------------------------------
 6.0 - COMPONENTS
 -------------------------------------------------------------- */
+
 .center {
 	align-items: center;
 }
 	
+#mission {
+	padding: 3rem calc(100%*1/12);
+}
 
+#mission p:last-child {
+	padding: 1.5rem 0 3rem;
+	
+}
 
+#packages h2, #packages>header h3 {
+	margin-top: 3rem;
+}
 
+#packages header.bg-blk p:last-of-type {
+	padding-bottom: 3rem;
+}
+
+.bg-purp p, #packages p {
+	font-weight: 600;
+}
+
+#surfer_indigo {
+	margin-top: 0;
+}
 
 /* -- BUTTONS -- */
 .btn {
 	border: solid 3px #fff;
 	font-weight: 600;
 	padding: 20px;
-	
 }
 
 
@@ -130,7 +181,9 @@ a {
 	background-color: #fff;
 }
 
-
+p.btn a {
+	padding: 1.5rem 0 3rem;
+}
 /* -- HEADER -- */
 h1 {
 	position: relative;
@@ -140,7 +193,11 @@ h1 {
 h2 {
 	font-size: 1.25rem;
 	font-weight: 800;
-	margin-top: 2.5rem 0 1.25rem;
+	margin: 2.5rem 0 1.25rem;
+}
+
+h3 {
+	padding: .5rem 1.5rem;
 }
 header > div {
 	margin-top: 5rem;
@@ -181,11 +238,13 @@ nav li {
 	margin-right: 2rem;
 }
 
-
+.bg-orange p, bg-blk p {
+	margin: 2.5rem 1.25rem;
+}
 	
 #safety {
 	background: url("../img/surfer1.jpg") no-repeat center center scroll; 
-	-webkit-background-size: cover;
+	-webkit: cover;
 	-moz-background-size: cover;
 	-o-background-size: cover;
 	-ms-background-size: cover;
@@ -205,11 +264,76 @@ nav li {
 	-ms-background-size: cover;
 	background-size: cover;
 	margin: 10px 0;
+	padding: 3rem 0;
 			
 		}
 
-#packages header span {
+
+#packages header span, #bg-purp p span {
 	font-weight: 800;
+}
+
+.bg-purp>p:last-child {
+	padding: 1.5rem 0 3rem 0;
+}
+#packages header.bg-blk p:first-of-type {
+	text-transform: none;
+}
+
+#packages ul {
+	text-align: center;
+	padding-left: 0;
+}
+#packages li {
+	line-height: 1.25rem;
+}
+
+
+#packages header.bg-blk p {
+	margin: 20px 0;
+}
+
+#packages header a:hover {
+	color: #ffa643;
+}
+
+#bg-purp>p {
+	padding-bottom: 1.5rem;
+	margin: 0;
+}
+
+.pkg {
+	padding: 1.5rem 2rem;
+}
+
+
+
+.pkg p:last-child {
+	margin-top: 1.5rem;
+	margin-bottom: 3rem;
+	
+}
+
+#signup {
+	background: url("../img/bg-form.jpg") no-repeat center center scroll; 
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	-ms-background-size: cover;
+	background-size: cover;
+	margin: 10px 0;
+	padding: 3rem 0;
+			
+		}
+	
+footer ol li {
+	display: inline-block;
+	text-align: left;
+	font-size: .75rem;
+}
+
+footer div{
+	padding: 1.5rem 0;
 }
 /*--------------------------------------------------------------
 7.0 - UTILITIES
@@ -218,27 +342,19 @@ nav li {
 
 /* -- ALIGNMENT -- */
 
-#packages header {
+#packages header.bg-blk, form {
 	text-align: left;
 	text-transform: uppercase;
-	padding: 20px 0;
 }
 
-#packages h2 {
+#packages h2, #packages section {
 	text-align: center;
 }
 
-#packages header p {
-	margin: 20px 0;
+#packages section {
+	text-transform: uppercase;
 }
 
-#packages header a:hover {
-	color: #ffa643;
-}
-
-#packages header p:last-child {
-	margin-top: 40px;
-}
 /* -- COLOR -- */
 
 .bg-orange {
@@ -263,11 +379,24 @@ nav a:hover {
 }
 /* -- SIZE -- */
 
+.tl-rnd {
+	border-top-left-radius: 5%;
+}
 
+.tr-rnd {
+	border-top-right-radius: 5%;
+}
 
+.bl-rnd {
+	border-bottom-left-radius: 5%;
+}
 
+.br-rnd {
+	border-bottom-right-radius: 5%;
+}
 
-
-
+.uppercase, .btn {
+	text-transform: uppercase;
+}
 
 
